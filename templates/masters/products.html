@@ -1,0 +1,135 @@
+{% include "header/header.html" %}
+<body class="sb-nav-fixed">
+    {% include "header/top_bar.html" %}
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            {% include "header/sidebar.html" %}
+        </div>
+        <div id="layoutSidenav_content">
+            <main>  
+                <div class="container-fluid px-4">
+                    <h2 class="mt-4">Master</h2>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item active">Products</li>
+                    </ol>
+
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between">
+                            <span><i class="fas fa-table me-1"></i>Products</span>
+                            <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#form" data-backdrop="static" data-keyboard="false"><i class="fa-solid fa-plus"></i> Add</button>
+                        </div>
+                        <div class="card-body">
+                            <table id="datatablesSimple">
+                                <thead>
+                                    <tr>
+                                        <th>Product Name</th>
+                                        <th>Created Datetime</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>2011/04/25</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garrett Winters</td>
+                                        <td>2011/07/25</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>2009/01/12</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cedric Kelly</td>
+                                        <td>2012/03/29</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Airi Satou</td>
+                                        <td>2008/11/28</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brielle Williamson</td>
+                                        <td>2012/12/02</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Herrod Chandler</td>
+                                        <td>2012/08/06</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rhona Davidson</td>
+                                        <td>2010/10/14</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Colleen Hurst</td>
+                                        <td>2009/09/15</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sonya Frost</td>
+                                        <td>2008/12/13</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jena Gaines</td>
+                                        <td>2008/12/19</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quinn Flynn</td>
+                                        <td>2013/03/03</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+                        </div> 
+                    </div>
+
+                    <center>
+                     
+                        <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+                          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header bg-info">
+                                <h5 class="modal-title text-light">Add new product</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              
+                                <form>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="product_name" class='float-left'>Product Name</label>
+                                            <input type="text" class="form-control" id="product_name" name = "product_name" placeholder="Product Name">
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer border-top-0 d-flex justify-content-right bg-light">
+                                        <button type="button" class="btn btn-success" id= 'submitbutton'>Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                    </center>
+
+                </div>
+            </main>
+            
+        </div>
+    </div>
+    
+</body>
+
+{% include "header/footer.html" %}  

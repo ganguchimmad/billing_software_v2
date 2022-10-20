@@ -1,0 +1,215 @@
+{% include "header/header.html" %}
+<body class="sb-nav-fixed">
+    {% include "header/top_bar.html" %}
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            {% include "header/sidebar.html" %}
+        </div>
+        <div id="layoutSidenav_content">
+            <main>  
+                <div class="container-fluid px-4">
+                    <h2 class="mt-4">Master</h2>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item">Master</li>
+                        <li class="breadcrumb-item active">Shop Keeper</li>
+                    </ol>
+
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between">
+                            <span><i class="fas fa-table me-1"></i>Shop Keeper</span>
+                            <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#form" data-backdrop="static" data-keyboard="false"><i class="fa-solid fa-plus"></i> Add</button>
+                        </div>
+                        <div class="card-body">
+                            <table id="datatablesSimple">
+                                <thead>
+                                    <tr>
+                                        <th>Full Name</th>
+                                        <th>Email</th>
+                                        <th>Mobile Number</th>
+                                        <th>Username</th>
+                                        <th>Password</th>
+                                        <th>Created Datetime</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>Password</td>
+                                        <td>2011/04/25</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>Password</td>
+                                        <td>2011/07/25</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>Password</td>
+                                        <td>2009/01/12</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>Password</td>
+                                        <td>2012/03/29</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>Password</td>
+                                        <td>2008/11/28</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>Password</td>
+                                        <td>2012/12/02</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>Password</td>
+                                        <td>2012/08/06</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>Password</td>
+                                        <td>2010/10/14</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>Password</td>
+                                        <td>2009/09/15</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>Password</td>
+                                        <td>2008/12/13</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>Password</td>
+                                        <td>2008/12/19</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>Password</td>
+                                        <td>2013/03/03</td>
+                                        <td class="text-center"><button type="button" class="btn btn-sm btn-info"><i class="fa-solid fa-pencil"></i> Edit</button></td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+                        </div> 
+                    </div>
+
+                    <center>
+                     
+                        <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+                          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header bg-info">
+                                <h5 class="modal-title text-light">Create shop shop keeper</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              
+                                <form>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="shop_id" class='float-left'>Shop ID</label>
+                                            <select class="form-select" id="shop_id" name = "shop_id" aria-label="Default select">
+                                                <option selected>---select---</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="txtUsername" class='float-left'>Username <span class='text-danger'>*</span></label>
+                                            <input type="text" class="form-control required" id="txtUsername" name = 'txtUsername' placeholder="Enter Username">
+                                          </div>
+                                          
+                                          <div class="form-group">
+                                            <label for="txtFullname" class='float-left'>Fullname <span class='text-danger'>*</span></label>
+                                            <input type="text" class="form-control required onlyalpha" id="txtFullname" name = 'txtFullname' placeholder="Enter Fullname">
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="txtEmail" class='float-left'>Email address <span class='text-danger'>*</span></label>
+                                            <input type="text" class="form-control required vld_email" id="txtEmail" name = 'txtEmail' placeholder="Enter Email">
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="txtMobile" class='float-left'>Mobile Number <span class='text-danger'>*</span></label>
+                                            <input type="text" class="form-control required vld_phoneno" id="txtMobile" name = 'txtMobile' placeholder="Enter Mobile">
+                                          </div>
+                                          
+
+                                    </div>
+                                    <div class="modal-footer border-top-0 d-flex justify-content-right bg-light">
+                                        <button type="button" class="btn btn-success" id= 'submitbutton'>Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                    </center>
+
+                </div>
+
+            </main>
+            
+        </div>
+    </div>
+    
+</body>
+
+{% include "header/footer.html" %}  
